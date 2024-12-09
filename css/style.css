@@ -1,0 +1,414 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+ /*menu */
+
+#menu{
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 0 0 0 0.5px black;
+    height:50px;
+    padding:10px;
+    width:100%;
+    border-bottom: 0.5px solid gray;
+    position: fixed;
+  
+}
+
+#menu img{
+    display:block;
+    float:right;
+    height:30px;
+    margin-top:10px;
+    margin-right:20px;
+    filter: brightness(0) invert(1);
+}
+
+
+#menu li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    float: left;
+    padding:15px;
+}
+
+li{
+    
+    border-right: 0.5px solid gray;
+   
+}
+
+a{
+    color:white;
+    text-decoration: inherit;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+/*footer */
+
+footer{
+    padding:10px;
+    border-top: 0.5px solid gray;
+    height: 5rem;
+    line-height: 5rem;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+footer p{
+    color:white;
+}
+
+.boton-subida button{
+    height:50px;
+    position: fixed;
+    right: 0;
+    bottom:0;
+    padding:10px;
+    margin:10px;
+    border-radius: 5px;
+   color:black;
+   font-size: 15px;
+   font-weight: bold;
+   border-radius: 1em;
+}
+
+.boton-subida img{
+    height: 25px;
+    transform: rotate(180deg);
+    
+}
+
+/*primer contenedor */
+
+.container{
+    padding-top:100px;
+    display:flex;
+    height:50rem;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container img{
+    animation-name: softanimation;
+    animation-duration: 5s;
+    display:block;
+    margin:auto;
+    border-radius:50%;
+    box-shadow: inset 10px 10px;
+    gap:0.5
+}
+
+.container img:hover{
+    animation-name: softanimation;
+    animation-duration: 5s;
+}
+
+.image{
+    width: 100%;
+}
+
+.title{
+    width: 100%;
+}
+
+.title>img{
+    height:30px;
+
+}
+
+.title>h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size:80px;
+    line-height: 500px;
+    height:50px;
+    color:white;
+    gap:0.5;
+    text-shadow: 4px 4px 4px #000000;
+    animation-name: softanimation;
+    animation-duration: 5s;
+    transition: all 0.5s ease; /* Cambios suaves en 0.5s */
+}
+
+
+    
+
+.title>h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size:50px;
+    margin-top: 20px;
+    line-height: 500px;
+    height:50px;
+    color:white;
+    gap:0.5;
+    text-shadow: 4px 4px 4px #000000;
+    animation-name: softanimation;
+    animation-duration: 5s;
+    
+    
+}
+
+
+@keyframes softanimation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 50;
+    }
+    100%{
+        opacity: 100;
+    }
+
+}
+
+/*segundo/tercer contenedor */
+
+
+.container2,.container3{
+    height:40rem;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.line{
+    margin: 0 auto;
+    border-bottom:solid 1px white;
+    width:50%;
+    height:0px;
+  }
+
+  .clearfix{
+    float: none;
+    clear: both;
+  }
+
+
+  .title2,.title3{
+    text-shadow: 4px 4px 4px #000000;
+    padding-top:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:40px;
+    height:50px;
+    color:white;
+    text-align: center;
+    transition: all 0.5s ease; 
+  }
+
+  .title2:hover,.title3:hover{
+    transform: scale(1.2);
+  }
+
+  .cajas {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0fr 0fr 0fr;
+    margin-top:5rem;
+}
+
+ 
+  .caja1,.caja2,.caja3,.caja4,.caja5,.caja6{
+    display: block;
+    color:white;
+    text-align: center;
+    border: 1px solid white;
+    padding:10px;
+    width:100px;
+    font-weight: bold;
+  }
+
+  .caja1:hover,.caja3:hover,.caja6:hover{
+    color:black;
+    background-color: rgb(153, 6, 238);
+    font-weight: bold;
+  }
+
+  .caja2:hover,.caja4:hover,.caja5:hover{
+    color:white;
+    background-color: rgb(76, 6, 238);
+    font-weight: bold;
+  }
+
+  .cajas img{
+    height:50px;
+    transition: all 0.5s ease; 
+  }
+
+
+  .cajas img:hover{
+    filter: invert(1);
+    transform: scale(1.2);
+  }
+
+
+  .experienciaContenedor{
+    position: relative;
+    width:30%;
+    margin: 0 auto;
+    padding:1.5em;
+    border: 0.5px solid white;
+    border-radius: 1em;
+    margin-top:5rem;
+  }
+
+
+  .experienciaContenedor h3{
+    color:white;
+    text-align: left;
+    font-size: 30px;
+    padding-bottom:10px;
+
+  }
+
+  .experienciaContenedor p{
+    color:white;
+    text-align: left;
+    font-size:20px;
+
+  }
+
+  /*contacto page */
+
+  .info_contacto{
+    padding-top:200px;
+    display:flex;
+    height:50rem;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .telefono{
+    width:50%;
+    text-align: center;
+  }
+
+  .telefono p{
+    transition: all 0.5s ease;
+    animation-name: softanimation;
+    animation-duration: 5s;
+    padding-top:50px;
+    color:white;
+    font-size:20px;
+  }
+
+  .telefono p:hover{
+    transform: scale(1.2);
+  }
+
+  .telefono h2{
+    text-shadow: 4px 4px 4px #000000;
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease;
+    animation-name: softanimation;
+    animation-duration: 5s;
+  }
+
+  .telefono h2:hover{
+    transform: scale(1.2);
+      
+  }
+
+  .correo{
+    width:50%;
+    text-align: center;
+  }
+
+  .correo p{
+    animation-name: softanimation;
+    animation-duration: 5s;
+    transition: all 0.5s ease;
+    padding-top:50px;
+    color:white;
+    font-size:20px;
+  }
+
+  .correo p:hover{
+    transform: scale(1.2);
+      
+  }
+
+  .correo h2{
+    text-shadow: 4px 4px 4px #000000;
+    padding-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    transition: all 0.5s ease;
+    animation-name: softanimation;
+    animation-duration: 5s;
+  }
+
+  .correo h2:hover{
+    transform: scale(1.2);
+      
+  }
+  
+  /* responsive */
+
+  @media (min-width: 200px) and (max-width: 1300px) {
+    .container {
+        flex-direction: column;
+        height:40rem;
+    }
+
+    .container img {
+        width: 20rem;
+    }
+
+    .title>h2 {
+        font-size: 60px;
+        line-height: 70px;
+    
+    }
+
+    .title>h3 {
+        font-size: 30px;
+        margin-top: 60px;
+        line-height: 100px;
+    }
+
+    .experienciaContenedor {
+      width: 70%;
+
+    }
+
+    .container2,.container3{
+     height: 40rem;
+    }
+  }
+
+  @media (min-width: 200px) and (max-width: 800px){
+    .info_contacto{
+        display:flex;
+        flex-direction: column;
+      }
+      .telefono{
+        width: 100%;
+      }
+      .correo{
+        width: 100%;
+      }
+  }
